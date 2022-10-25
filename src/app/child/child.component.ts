@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { StyleDirective } from '../style.directive';
 
@@ -10,8 +10,11 @@ import { StyleDirective } from '../style.directive';
   standalone: true,
   imports: [CommonModule, FormsModule, StyleDirective],
 })
-export class ChildComponent implements OnInit {
+export class ChildComponent {
   color = '';
   weight = '';
-  ngOnInit(): void {}
+
+  showAlert() {
+    alert('hello');
+  }
 }

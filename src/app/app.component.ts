@@ -11,9 +11,4 @@ import { ChildComponent } from './child/child.component';
 })
 export class AppComponent {
   title = 'perf-app';
-  showChild = true;
-
-  toggleChild() {
-    this.showChild = !this.showChild;
-  }
 }
