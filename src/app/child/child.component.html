@@ -1,2 +1,7 @@
-<p>child works!</p>
-{{ data | json }}
+<p appStyle [color]="color" [weight]="weight">child works!</p>
+<div>
+  <input type="text" [(ngModel)]="color" />
+</div>
+<div>
+  <input type="text" [(ngModel)]="weight" />
+</div>
