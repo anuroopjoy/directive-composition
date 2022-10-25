@@ -1,4 +1,4 @@
-import { Directive } from '@angular/core';
+import { Directive, Input } from '@angular/core';
 import { FontWtDirective } from './font-weight.directive';
 import { ColorDirective } from './color.directive';
 
@@ -6,8 +6,8 @@ import { ColorDirective } from './color.directive';
   selector: '[appStyle]',
   standalone: true,
   hostDirectives: [
-    { directive: ColorDirective, inputs: ['color'] },
-    { directive: FontWtDirective, inputs: ['weight'] },
+    { directive: ColorDirective, inputs: ['color: mycolor'] },
+    { directive: FontWtDirective, inputs: ['weight: myweight'] },
   ],
 })
 export class StyleDirective {}
